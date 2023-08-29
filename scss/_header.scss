@@ -1,0 +1,105 @@
+.header {
+    padding-top: 54px;
+
+    //header-logo
+    &-logo {
+        display: flex;
+        align-items: center;
+
+        //header-logo__img
+        &__img {
+            margin-right: 10px;
+        }
+
+        //header-logo__bText
+        &__bText {
+            margin-bottom: 3px;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        //header-logo__text
+        &__text {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .nav {
+        z-index: 2;
+
+        //nav-list
+        &-list {
+            padding: 10px;
+
+            //nav-list__item
+            &__item {
+                display: inline-block;
+                padding-left: 25px;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                //nav-list__item--active
+
+            }
+
+            //nav-list__link
+            &__link {
+                color: #FFFFFFBF;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 124%;
+
+                //nav-list__link--active
+                &--active {
+                    color: #E7084E;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 3px;
+                        background-color: #E7084E;
+                        left: 0;
+                        bottom: -12px;
+                    }
+                }
+            }
+        }
+    }
+
+    //header-contact
+    &-contact {
+        z-index: 2;
+
+        //header-contact__text
+        &__text {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 99.179%;
+            margin-bottom: 8px;
+        }
+
+        //header-contact__icon
+        &__icon {
+            margin-left: 31px;
+            border-radius: 6px;
+            background: linear-gradient(55deg, #FF0179 0%, #F60A33 100%);
+            box-shadow: 0px 4px 10px 0px rgba(232, 95, 130, 0.25), 0px 4px 5px 0px rgba(217, 248, 255, 0.50) inset;
+            padding: 5px;
+
+            //header-contact__icon--right
+            &--right {
+                margin-left: 16px;
+            }
+        }
+    }
+}
