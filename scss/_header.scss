@@ -5,10 +5,12 @@
     &-logo {
         display: flex;
         align-items: center;
+        z-index: 2;
 
         //header-logo__img
         &__img {
             margin-right: 10px;
+            cursor: pointer;
         }
 
         //header-logo__bText
