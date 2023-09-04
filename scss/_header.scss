@@ -31,6 +31,25 @@
         }
     }
 
+    //header-phone
+    &-phone {
+        z-index: 2;
+        display: none;
+
+        //header-phone__img
+        &__img {
+            display: inline-block;
+        }
+
+        //header-phone__number
+        &__number {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+
     .nav {
         z-index: 2;
 
@@ -101,6 +120,114 @@
             //header-contact__icon--right
             &--right {
                 margin-left: 16px;
+            }
+        }
+    }
+
+    //header-burgerNav
+    &-burgerNav {
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        margin-left: 14px;
+
+        //header-burgerNav__list
+        &__list {
+            display: none;
+        }
+
+        //header-burgerNav__item
+        &__item {}
+
+        //header-burgerNav__link
+        &__link {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+
+            &:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        }
+
+        //header-burgerNav__btn
+        &__btn {
+            opacity: 1;
+        }
+
+        //header-burgerNav--mobile
+        &--mobile {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .header {
+        padding-top: 17px;
+        text-align: center;
+
+        //header-logo
+        &-logo {
+
+            //header-logo__img
+            &__img {
+                margin-right: 9px;
+                width: 38px;
+                height: 40px;
+            }
+
+            //header-logo__bText
+            &__bText {
+                display: none;
+            }
+
+            //header-logo__text
+            &__text {
+                display: none;
+            }
+        }
+
+        //header-phone
+        &-phone {
+            display: block;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        //header-contact
+        &-contact {
+            z-index: 2;
+
+            //header-contact__text
+            &__text {
+                display: none;
+            }
+
+            //header-contact__icon
+            &__icon {
+                margin-left: 0;
+
+                //header-contact__icon--right
+                &--right {
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        //header-burgerNav
+        &-burgerNav {
+
+            //header-burgerNav--mobile
+            &--mobile {
+                display: block;
             }
         }
     }
