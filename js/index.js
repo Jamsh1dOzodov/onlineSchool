@@ -1,11 +1,12 @@
 
-const burgerBtn = document.querySelector('.header-burgerNav__btn');
+const burgerBtn = document.querySelector('.header-burgerBtn');
 burgerBtn.addEventListener('click', event => {
-    const list = document.querySelector('.header-burgerNav__list')
-    if (list.style.display === "block") {
-        list.style.display = "none"
+    const list = document.querySelector('.nav-list')
+    list.classList.toggle('nav-list--show')
+    if (list.classList.contains('nav-list--show')) {
+        document.body.style.overflowY = "hidden"
     } else {
-        list.style.display = "block"
+        document.body.style.overflowY = "visible"
     }
 })
 

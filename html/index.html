@@ -25,17 +25,18 @@
                     <img class="header-phone__img" src="/img/phone.svg" alt="Телефон">
                     <p class="header-phone__number">+7 900 000 00 00</p>
                 </div>
-                <nav class="nav">
-                    <div class="wrapper">
-                        <ul class="nav-list">
-                            <li class="nav-list__item"><a class="nav-list__link nav-list__link--active"
-                                    href="">Контакты</a></li>
-                            <li class="nav-list__item"><a class="nav-list__link" href="">Кейсы</a></li>
-                            <li class="nav-list__item"><a class="nav-list__link" href="">О нас</a></li>
-                            <li class="nav-list__item"><a class="nav-list__link" href="">Услуги</a></li>
-                            <li class="nav-list__item"><a class="nav-list__link" href="">Блог</a></li>
-                        </ul>
-                    </div>
+
+                <button class="header-burgerBtn"><img src="/img/burger.svg" alt=""></button>
+
+                <nav class="header-nav nav">
+                    <ul class="nav-list wrapper">
+                        <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="">Контакты</a>
+                        </li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="">Кейсы</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="">О нас</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="">Услуги</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="">Блог</a></li>
+                    </ul>
                 </nav>
                 <div class="header-contact">
                     <p class="header-contact__text">Связаться с нами</p>
@@ -43,21 +44,6 @@
                     <a href="#"><img class="header-contact__icon header-contact__icon--right"
                             src="/img/header_whatsapp.png" alt="Whatsapp"></a>
                 </div>
-
-
-                <div class="header-burgerNav header-burgerNav--mobile">
-                    <ul class="header-burgerNav__list">
-                        <li class="header-burgerNav__item"><a class="header-burgerNav__link" href="#">Контакты</a></li>
-                        <li class="header-burgerNav__item"><a class="header-burgerNav__link" href="#">Кейсы</a></li>
-                        <li class="header-burgerNav__item"><a class="header-burgerNav__link" href="#">О нас</a></li>
-                        <li class="header-burgerNav__item"><a class="header-burgerNav__link" href="#">Услуги</a></li>
-                        <li class="header-burgerNav__item"><a class="header-burgerNav__link" href="#">Блог</a></li>
-                    </ul>
-                    <!-- <button class="header-burgerNav__btn" onclick="burger()"><img src="/img/burger.svg" alt=""></button> -->
-                    <a class="header-burgerNav__btn" onclick="burger()" href="#"><img src="/img/burger.svg"
-                            alt="Меню"></a>
-                </div>
-
             </div>
         </div>
     </header>
@@ -159,9 +145,9 @@
                     и не потерять деньги</h2>
 
                 <div class="start-option">
-                    <button class="start-option__btn start-option__btn--active start-option__btn--left" onclick="firstBtn">1
+                    <button class="start-option__btn start-option__btn--active start-option__btn--left">1
                         вариант</button>
-                    <button class="start-option__btn start-option__btn--right" onclick="secondBtn">2 вариант</button>
+                    <button class="start-option__btn start-option__btn--right">2 вариант</button>
                 </div>
                 <div class="wrapper">
                     <div class="col">
@@ -230,7 +216,7 @@
                             <div class="launch-podblock">
                                 <img class="launch-model__img launch-model__img--1" src="/img/launch_img1.svg"
                                     alt="Шестерня">
-                                <p class="launch-model__text">Диагностика и формирование стратегии</p>
+                                <p class="launch-model__text launch-model__text--line">Диагностика и формирование стратегии</p>
                             </div>
                         </div>
                         <div class="launch-model launch-model--4">
