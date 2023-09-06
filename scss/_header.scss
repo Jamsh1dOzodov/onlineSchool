@@ -131,6 +131,48 @@
 }
 
 
+
+@media (max-width: 992px) {
+    .header {
+        padding-top: 20px;
+
+        //header-logo
+        &-logo {
+
+            //header-logo__bText
+            &__bText {
+                display: none;
+            }
+
+            //header-logo__text
+            &__text {
+                display: none;
+            }
+        }
+
+        .nav {
+
+            //nav-list
+            &-list {
+
+                //nav-list__link
+                &__link {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        //header-contact
+        &-contact {
+
+            //header-contact__text
+            &__text {
+                display: none;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         padding-top: 17px;
